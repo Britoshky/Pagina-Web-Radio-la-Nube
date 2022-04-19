@@ -3,7 +3,6 @@ import { Router } from "express";
 const router = Router();
 
 router.get("/", (req, res) => {
-  res.cookie("foo", "bar", { sameSite: "none", secure: true });
   res.render("index");
 });
 router.get("/programacion", (req, res) => {
