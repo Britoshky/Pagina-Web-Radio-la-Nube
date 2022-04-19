@@ -1,0 +1,32 @@
+{
+  "name": "la_nube",
+  "version": "0.0.1",
+  "description": "Radio La Nube",
+  "main": "index.js",
+  "scripts": {
+    "babel-node": "babel-node --presets=@babel/preset-env",
+    "dev": "nodemon --exec npm run babel-node src/index.js",
+    "build": "babel src -d dist && ncp src/views dist/views && ncp src/public dist/public",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "Héctor Brito",
+  "license": "ISC",
+  "dependencies": {
+    "cookie": "^0.5.0",
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.5",
+    "moongose": "^1.0.0",
+    "morgan": "^1.10.0",
+    "should-send-same-site-none": "^2.0.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/node": "^7.16.8",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "ncp": "^2.0.0",
+    "nodemon": "^2.0.15"
+  }
+}

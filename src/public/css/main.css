@@ -1,0 +1,8 @@
+body {
+  background: #111;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+}
