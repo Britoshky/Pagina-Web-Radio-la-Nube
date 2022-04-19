@@ -9,3 +9,4 @@
 9.- crear repositorio en git
 10.- git remote add origin https://github.com/Britoshky/Pagina-Web-Radio-la-Nube.git
 11.- git push -u origin master
+12.- npm i @babel/runtime
